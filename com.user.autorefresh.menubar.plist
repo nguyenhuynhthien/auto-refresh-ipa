@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.autorefresh.menubar</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Frameworks/Python.framework/Versions/3.14/bin/python3</string>
+        <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA/menubar_app.py</string>
+    </array>
+
+    <!-- Tự động khởi động Menu Bar icon ngay khi bật máy MacBook / Đăng nhập -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Luôn giữ Menu Bar chạy liên tục -->
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA/logs/menubar_stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA/logs/menubar_stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.14/bin</string>
+    </dict>
+</dict>
+</plist>

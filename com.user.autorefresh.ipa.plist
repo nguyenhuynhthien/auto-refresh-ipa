@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.autorefresh.ipa</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Library/Frameworks/Python.framework/Versions/3.14/bin/python3</string>
+        <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA/auto_refresh.py</string>
+    </array>
+
+    <!-- Tự động chạy ngay khi đăng nhập / bật máy (kể cả sau shutdown hoặc wake up) -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Định kỳ chạy kiểm tra mỗi 1 giờ (3600 giây). Nếu đã đủ 5 ngày và có iPhone cắm thì sẽ refresh -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA/logs/launchd_stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/nguyenhuynhthien/Documents/Works/Auto-Refresh-IPA/logs/launchd_stderr.log</string>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.14/bin</string>
+    </dict>
+</dict>
+</plist>

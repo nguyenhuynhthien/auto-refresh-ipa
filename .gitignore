@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & Sensitive data
+.env
+.env.local
+.env.*.local
+
+# Configuration with sensitive/custom personal data
+# (Bạn có thể bỏ comment nếu muốn giữ config.json làm template hoặc ignore)
+# config.json
+last_refresh_state.json
+
+# Logs & Temporary files
+logs/
+*.log
+scratch/
+
+# Build artifacts & Temporary working files
+build/
+dist/
+*.egg-info/
+signed_output/
+*.ipa
+bin/*.ipa
+!bin/.gitkeep
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

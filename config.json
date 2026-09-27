@@ -1,0 +1,11 @@
+{
+  "ipa_path": "bin/AppDiuCard.ipa",
+  "bundle_id": "com.nguyenhuynhthien.diucard2025",
+  "signing_identity": "Apple Development: victoriakzru@gmail.com (JY83LRR7WU)",
+  "team_id": "JY83LRR7WU",
+  "provisioning_profile_path": "",
+  "device_udid": "00008120-001C0C990EA3601E",
+  "refresh_interval_days": 4,
+  "state_file": "last_refresh_state.json",
+  "install_method": "auto"
+}
